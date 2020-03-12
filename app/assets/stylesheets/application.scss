@@ -1,0 +1,17 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap"; // import the css of bootstrap that gets picked up in the node modules
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index"; //import the index file from the components subfolder
+@import "pages/index";  //import the index file from the pages subfolder
+
+body {
+  background-color: yellow;
+}

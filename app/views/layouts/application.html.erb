@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsFrontendBatch377</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- import my application.scss -->
+
+  </head>
+
+  <body>
+
+    <%= render "shared/navbar" %>
+
+    <%= yield %>
+    <%= render 'shared/footer' %>
+
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- import my application.js from the rails asset pipeline -->
+
+      <%= javascript_pack_tag "application" %>
+      <!-- importing the application.js coming from webpack -->
+  </body>
+</html>
